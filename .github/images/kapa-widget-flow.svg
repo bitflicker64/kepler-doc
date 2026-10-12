@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 640" width="1300" height="640" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333333"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1300" height="640" fill="#ffffff"/>
+
+  <!-- Column headers -->
+  <text x="300" y="44" font-size="26" font-weight="bold" fill="#222222" text-anchor="middle">This repository (built by MkDocs)</text>
+  <text x="975" y="44" font-size="26" font-weight="bold" fill="#222222" text-anchor="middle">Visitor's browser and kapa.ai</text>
+  <line x1="640" y1="70" x2="640" y2="610" stroke="#bbbbbb" stroke-width="2" stroke-dasharray="8 8"/>
+
+  <!-- mkdocs.yml -->
+  <rect x="60" y="90" width="480" height="110" rx="10" fill="#e0f2f1" stroke="#009485" stroke-width="2"/>
+  <text x="80" y="122" font-size="22" font-weight="bold" fill="#222222">mkdocs.yml</text>
+  <text x="80" y="152" font-size="20" fill="#222222" font-family="Menlo, Consolas, monospace">extra_javascript:</text>
+  <text x="80" y="180" font-size="20" fill="#222222" font-family="Menlo, Consolas, monospace">  - javascripts/kapa.js   (+1 line)</text>
+
+  <!-- arrow to kapa.js -->
+  <line x1="300" y1="200" x2="300" y2="262" stroke="#333333" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="312" y="238" font-size="18" fill="#444444">MkDocs adds a script tag to every page (en and zh)</text>
+
+  <!-- kapa.js -->
+  <rect x="60" y="270" width="480" height="210" rx="10" fill="#e0f2f1" stroke="#009485" stroke-width="2"/>
+  <text x="80" y="302" font-size="22" font-weight="bold" fill="#222222">docs/javascripts/kapa.js</text>
+  <text x="80" y="334" font-size="19" fill="#222222">1. Waits for DOMContentLoaded</text>
+  <text x="80" y="362" font-size="19" fill="#222222">2. Creates a script tag for kapa's bundle with:</text>
+  <text x="110" y="390" font-size="19" fill="#222222">website id, name, teal, hCaptcha,</text>
+  <text x="110" y="418" font-size="19" fill="#222222">language from html lang, example questions</text>
+  <text x="80" y="456" font-size="19" fill="#222222">3. Appends it to head, async</text>
+
+  <!-- arrow across columns -->
+  <line x1="540" y1="375" x2="742" y2="375" stroke="#333333" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="641" y="356" font-size="18" fill="#444444" text-anchor="middle">loads</text>
+
+  <!-- kapa bundle -->
+  <rect x="750" y="300" width="470" height="150" rx="10" fill="#f5f5f5" stroke="#777777" stroke-width="2"/>
+  <text x="770" y="332" font-size="22" font-weight="bold" fill="#222222">widget.kapa.ai/kapa-widget.bundle.js</text>
+  <text x="770" y="364" font-size="19" fill="#222222">Reads the data-* attributes and draws</text>
+  <text x="770" y="392" font-size="19" fill="#222222">the "Ask AI" button and the chat modal.</text>
+  <text x="770" y="428" font-size="19" fill="#222222">Maintained by kapa, not in this repo.</text>
+
+  <!-- arrow to kapa API -->
+  <line x1="985" y1="450" x2="985" y2="512" stroke="#333333" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="997" y="488" font-size="18" fill="#444444">question, website id, captcha token</text>
+
+  <!-- kapa API -->
+  <rect x="750" y="520" width="470" height="90" rx="10" fill="#f5f5f5" stroke="#777777" stroke-width="2"/>
+  <text x="770" y="548" font-size="22" font-weight="bold" fill="#222222">kapa.ai API</text>
+  <text x="770" y="574" font-size="18" fill="#222222">Checks the domain allowlist, then answers</text>
+  <text x="770" y="598" font-size="18" fill="#222222">from the indexed Kepler docs, with citations</text>
+
+  <!-- dashboard note -->
+  <rect x="750" y="90" width="470" height="150" rx="10" fill="#fff8e1" stroke="#c8a300" stroke-width="2"/>
+  <text x="770" y="122" font-size="22" font-weight="bold" fill="#222222">Set on the kapa dashboard, not in code</text>
+  <text x="770" y="154" font-size="19" fill="#222222">Website Widget integration for the Kepler project</text>
+  <text x="770" y="182" font-size="19" fill="#222222">Allowed: sustainable-computing.io,</text>
+  <text x="770" y="210" font-size="19" fill="#222222">Netlify deploy previews, localhost</text>
+</svg>
